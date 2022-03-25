@@ -10,7 +10,7 @@ I had just bought a Aurebesh keycap set for a keyboard of mine, and wanted to in
 
 Finding the right usable font turned out to be troublesome.
 
-- [This **Wookieepedia** article](https://starwars.fandom.com/wiki/Aurebesh) seems to be the definitive definition of the Aurebesh character set.
+- This [**Wookieepedia** article](https://starwars.fandom.com/wiki/Aurebesh) seems to be the definitive definition of the Aurebesh character set.
     - But it's missing a whole bunch of font-able characters needed for a font, most notably the numerals *(0-9)*, some of the mathematical operators *("+", "=", etc.)*, and some of the other often used characters *("~", "{", "[", "@", and so on)*.
 - The keycaps seem to have been made based on the Neale Davidson's *(from [pixelsagas.com](https://pixelsagas.com))* **Aurebesh** font.
     - But that font has the capital letters turned around! ***(?)***
@@ -36,3 +36,12 @@ Get the font file from here [dist/Aurebesh.ttf](https://github.com/vinorodrigues
 
 ## To do:
 * Ligatures sporting extended legends for "ch", "ae", "eo", "kh", "ng", "oo", "sh" and "th".
+
+## I need help
+
+I'm no font expert ... so if you have some knowledge to share or recommendations please feel to do so via the [**Issues**](https://github.com/vinorodrigues/font-aurebesh/issues) tab.  This includes:
+* Spacing and Kerning recommendations
+* Requests for additional characters
+
+-----------------------------------
+--made with &#9825;, Vino Rodrigues
