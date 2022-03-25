@@ -35,4 +35,4 @@ Get the font file from here [dist/Aurebesh.ttf](https://github.com/vinorodrigues
 * Numerals are represented as western numerals-like characters.
 
 ## To do:
-* Lit. sporting extended legends for "ch", "ae", "eo", "kh", "ng", "oo", "sh" and "th".
+* Ligatures sporting extended legends for "ch", "ae", "eo", "kh", "ng", "oo", "sh" and "th".
