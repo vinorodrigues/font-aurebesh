@@ -25,7 +25,7 @@ This work is yet another version of the Aurebesh font, built with [BirdFont](htt
 ![Sample](/docs/image-1.png)
 
 
-Get the font file from here [dist/Aurebesh.ttf](dist/Aurebesh.ttf).
+Get the font file from here [dist/Aurebesh.ttf](https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/Aurebesh.ttf).
 
 ## Features:
 * Correct canon uppercase characters.  Uppercase characters are however 10% larger - just subtle enough to be visible as a capital.
