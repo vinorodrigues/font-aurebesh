@@ -18,7 +18,11 @@ Finding the right usable font turned out to be troublesome.
     - However it is the most widely used Aurebesh font *(an assumption I'm making based on how many sites have it for download!)*
     - Other variants, like **Aurebesh Cantina**, have also adopted this horizontal inversion for capitals.
     - And yet others, like **AurekBesh Hand**, have not *(alas, that font also uses another discrepancy, in that the numerals being dot-count based, and not the more common western numerals used in the fore-mentioned fonts)*.
-- The closest to true representation of the **Aurebesh** font was made by Yari Leferink, *(from [aurebesh.org](https://aurebesh.org))* - his work was the closest to "true" I could find, but I wanted a font that was closer to some of the characters on my keyboard.
+- The closest to true representation of the **Aurebesh** font was made by Yari Leferink, *(from [aurebesh.org](https://aurebesh.org))*
+    - His work was the closest to "true" I could find, i.e.:
+        - Capitals are same size and orientation as lower case characters
+        - Support for Ligatures
+    - But I wanted a font that was closer to some of the characters on my keyboard.
 
 ## This work
 
@@ -33,13 +37,11 @@ Get the font file from here [dist/Aurebesh.ttf](https://github.com/vinorodrigues
 ## Features:
 * Correct canon uppercase characters.  Uppercase characters are however 10% larger - just subtle enough to be visible as a capital.
 * Numerals are represented as western numerals-like characters.
-
-## To do:
 * Ligatures sporting extended legends for "ch", "ae", "eo", "kh", "ng", "oo", "sh" and "th".
 
 ## I need help
 
-I'm no font expert ... so if you have some knowledge to share or recommendations please feel to do so via the [**Issues**](https://github.com/vinorodrigues/font-aurebesh/issues) tab.  This includes:
+I'm no font expert ... so if you have some knowledge to share or recommendations; please feel free to do so via the [**Issues**](https://github.com/vinorodrigues/font-aurebesh/issues) tab.  This includes:
 * Spacing and Kerning recommendations
 * Requests for additional characters
 
