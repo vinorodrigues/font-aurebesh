@@ -43,16 +43,16 @@
          src: url("dist/Aurebesh.eot");
       }
   
-      body {
+      .aurebesh {
         font-family: "AurebeshEOT","AurebeshTTF","AurebeshSVG",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif;
       }
 
-      .rf {
+      .reset {
         font-family: var(--bs-body-font-family);
       }
     </style>
   </head>
-  <body>
+  <body class="aurebesh">
     
 <div class="col-lg-8 mx-auto p-3 py-md-5">
   <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
@@ -64,11 +64,20 @@
 
   <main>
     <h1>Download the Font</h1>
-    <p class="fs-5 col-md-8">Quickly and easily get started with the Aurubesh Font.  Download the TTF (True Type Font file) and inatsll it on your device.</p>
+    <div class="row">
+    <p class="fs-5 col-md-12">Quickly and easily get started with the Aurebesh Font.  Download the TTF (True Type Font file) and install it on your device.</p>
+    </div>
 
     <div class="mb-5">
       <a href="https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/Aurebesh.ttf" class="btn btn-primary btn-lg px-4">Download font</a>
     </div>
+
+    <h2>Test it</span></h2>
+
+    <label for="exampleIn" class="form-label">Example text</span></label>
+    <textarea class="form-control reset" id="exampleIn" rows="2" oninput="updateText()" placeholder="Test it. Type in this box."></textarea>
+
+    <textarea class="form-control form-control-lg mt-3" id="exampleOut" rows="2" readonly></textarea>
 
     <hr class="col-3 col-md-2 mb-5">
 
@@ -91,11 +100,18 @@
     </div>
   </main>
   <footer class="pt-5 my-5 text-muted border-top">
-    Created with <span class="rf">&#9825;</span> by Vino Rodrigues &middot; &copy; 2022
+    <small>This project would not have been possible without the influence of Andy Price of the <a href="https://www.501scg.org/" rel="noopener" target="_blank">Southern Cross Garrison / 501<sup>st</sup> Legion</a>.</small><br>
+    Created with <span class="reset">&#9825;</span> by Vino Rodrigues &middot; &copy; 2022
   </footer>
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      function updateText() {
+        document.getElementById('exampleOut').value = document.getElementById('exampleIn').value;
+      }
+    </script>
       
   </body>
 </html>
