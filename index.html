@@ -9,8 +9,9 @@
 
     <link rel="canonical" href="https://vinorodrigues.github.io/font-aurebesh/">
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap & FontAwesome CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-dark.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Stuff -->
     <meta name="color-scheme" content="light dark">
@@ -42,10 +43,12 @@
          src: url("dist/Aurebesh.eot");
       }
   
+      body.page .translate,
       .aurebesh {
         font-family: "AurebeshEOT", "AurebeshTTF", "AurebeshSVG", var(--bs-body-font-family);
       }
 
+      body.page.aurebesh .translate,
       .reset {
         font-family: var(--bs-body-font-family);
       }
@@ -72,7 +75,7 @@
       }
     </style>
   </head>
-  <body class="aurebesh">
+  <body class="page aurebesh">
     
 <div class="col-lg-8 mx-auto p-3 py-md-5">
   <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
@@ -83,13 +86,13 @@
   </header>
 
   <main>
-    <h1>Download the Font</h1>
+    <h1 class="h2">Download the Font</h1>
     <div class="row">
     <p class="fs-5 col-md-12">Quickly and easily get started with the Aurebesh Font.  Download the TTF (True Type Font file) and install it on your device.</p>
     </div>
 
     <div class="mb-5">
-      <a href="https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/Aurebesh.ttf" class="btn btn-primary btn-lg px-4">Download font</a>
+      <a href="https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/Aurebesh.ttf" class="btn btn-primary btn-lg px-4"><i class="fa fa-download"></i> Download font</a>
     </div>
 
     <h2>Test it</span></h2>
@@ -97,31 +100,36 @@
     <label for="exampleIn" class="form-label">Example text</span></label>
     <textarea class="form-control reset phold mb-3" id="exampleIn" rows="2" placeholder="Test it. Type in this box." oninput="UpdateOut()"></textarea>
 
-    <textarea class="form-control form-control-lg mb-3 nobg" id="exampleOut" rows="2" readonly></textarea>
+    <textarea class="form-control form-control-lg mb-3 nobg aurebesh" id="exampleOut" rows="2" readonly></textarea>
 
     <hr class="col-3 col-md-2 mb-5">
 
     <div class="row g-5">
       <div class="col-md-6">
         <h2>Open Source</h2>
-        <p>This font is published under the <a href="https://github.com/vinorodrigues/font-aurebesh/blob/main/LICENSE.md" rel="noopener" target="_blank">SIL Open Font License (OFL-1.1)</a></p>
-        <ul class="icon-list">
-          <li>Get the <a href="https://github.com/vinorodrigues/font-aurebesh" rel="noopener" target="_blank">source on Github</a>.</li>
-        </ul>
+        <p>
+          <i class="fa fa-gavel"></i> This font is published under the <a href="https://github.com/vinorodrigues/font-aurebesh/blob/main/LICENSE.md" rel="noopener" target="_blank">SIL Open Font License (OFL-1.1)</a>
+        </p>
+        <p>
+          <i class="fa fa-github"></i> Get the <a href="https://github.com/vinorodrigues/font-aurebesh" rel="noopener" target="_blank">source on Github</a>.
+        </p>
       </div>
 
       <div class="col-md-6">
         <h2>Contribute</h2>
-        <p>Open source means anyone can help.</p>
-        <ul class="icon-list">
-          <li>Report <a href="https://github.com/vinorodrigues/font-aurebesh/issues" rel="noopener" target="_blank">issues</a>.</li>
-        </ul>
+        <p>
+          <i class="fa fa-question"></i> Open source means anyone can help.
+        </p>
+        <p>
+          <i class="fa fa-bug"></i> Report <a href="https://github.com/vinorodrigues/font-aurebesh/issues" rel="noopener" target="_blank">issues</a>.
+        </p>
       </div>
     </div>
   </main>
   <footer class="pt-5 my-5 text-muted border-top">
     <small>This project would not have been possible without the influence of Andy Price of the <a href="https://www.501scg.org/" rel="noopener" target="_blank">Southern Cross Garrison / 501<sup>st</sup> Legion</a>.</small><br>
     Created with <span class="reset">&#9825;</span> by Vino Rodrigues &middot; &copy; 2022
+    &middot; <a class="translate" onclick="DoTranslate()" href="#">Translate</a>    
   </footer>
 </div>
 
@@ -145,6 +153,10 @@
         // ot.setAttribute("style", "height:" + (ot.scrollHeight) + "px;overflow-y:hidden;");
         ot.style.height = "auto";
         ot.style.height = (ot.scrollHeight) + "px";
+      }
+
+      function DoTranslate() {
+        document.body.classList.toggle("aurebesh");
       }
     </script>
       
