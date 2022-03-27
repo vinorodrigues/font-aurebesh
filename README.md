@@ -52,4 +52,6 @@ I'm no font expert ... so if you have some knowledge to share or recommendations
 
 
 ------------------------------------
--- made with &#9825;, Vino Rodrigues
+<small>This project would not have been possible without the influence of [Andy Price](https://www.instagram.com/Andylah42542/) of the [Southern Cross Garrison / 501<sup>st</sup> Legion](https://www.501scg.org/).</small>
+
+&#8212; made with &#9825;, Vino Rodrigues
