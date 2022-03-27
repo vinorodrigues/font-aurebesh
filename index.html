@@ -17,6 +17,9 @@
     <meta name="theme-color" content="#111111" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#eeeeee" media="(prefers-color-scheme: dark)">
 
+    <!-- Favicons -->
+    <link rel="icon" href="docs/favicon.svg" type="image/svg+xml">
+
     <!-- Aurebesh Font -->
     <style type="text/css">
       body {
@@ -49,6 +52,10 @@
 
       .reset {
         font-family: var(--bs-body-font-family);
+      }
+
+      .nobg {
+        background-color: transparent !important;
       }
 
       .phold::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -92,9 +99,9 @@
     <h2>Test it</span></h2>
 
     <label for="exampleIn" class="form-label">Example text</span></label>
-    <textarea class="form-control reset phold" id="exampleIn" rows="2" placeholder="Test it. Type in this box." oninput="UpdateOut()"></textarea>
+    <textarea class="form-control reset phold mb-3" id="exampleIn" rows="2" placeholder="Test it. Type in this box." oninput="UpdateOut()"></textarea>
 
-    <textarea class="form-control form-control-lg mt-3" id="exampleOut" rows="2" readonly></textarea>
+    <textarea class="form-control form-control-lg mb-3 nobg" id="exampleOut" rows="2" readonly></textarea>
 
     <hr class="col-3 col-md-2 mb-5">
 
