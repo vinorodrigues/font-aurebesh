@@ -24,6 +24,7 @@ Finding the right usable font turned out to be troublesome.
         - Support for Ligatures
     - But I wanted a font that was closer to some of the characters on my keyboard.
 
+
 ## This work
 
 So I set out to create my own.
@@ -32,12 +33,16 @@ This work is yet another version of the Aurebesh font, built with [BirdFont](htt
 
 ![Sample](/docs/image-1.png)
 
-Get the font file from here [dist/Aurebesh.ttf](https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/Aurebesh.ttf).
+Get the font file from [dist/Aurebesh.ttf](https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/Aurebesh.ttf)
+
+See it in action with the test website, located at [vinorodrigues.github.io/font-aurebesh](https://vinorodrigues.github.io/font-aurebesh/)
+
 
 ## Features:
 * Correct canon uppercase characters.  Uppercase characters are however 10% larger - just subtle enough to be visible as a capital.
 * Numerals are represented as western numerals-like characters.
 * Ligatures sporting extended legends for "ch", "ae", "eo", "kh", "ng", "oo", "sh" and "th".
+
 
 ## I need help
 
@@ -45,5 +50,6 @@ I'm no font expert ... so if you have some knowledge to share or recommendations
 * Spacing and Kerning recommendations
 * Requests for additional characters
 
------------------------------------
---made with &#9825;, Vino Rodrigues
+
+------------------------------------
+-- made with &#9825;, Vino Rodrigues
