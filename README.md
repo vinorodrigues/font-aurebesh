@@ -6,7 +6,7 @@ A Star Wars fan font.
 
 I had just bought a Aurebesh keycap set for a keyboard of mine, and wanted to install a font ... alas ... not as simple as I thought.
 
-<p align="center"> ![KBDFans KBD67 Lite](docs/image-2.png) </p>
+<p align="center"><img src="docs/image-2.png"></p>
 
 Finding the right usable font turned out to be troublesome.
 
@@ -24,15 +24,19 @@ Finding the right usable font turned out to be troublesome.
         - Support for Ligatures
     - But I wanted a font that was closer to some of the characters on my keyboard.
 
-<p align="center"> ![](sources/source3.jpg) </p>
-
 ## This work
 
 So I set out to create my own.
 
-This work is yet another version of the Aurebesh font, built with [BirdFont](https://birdfont.org/) and released under the [SIL Open Font License (OFL-1.1)](LICENSE.md).
+Stephen Crane's original definition of the Aurebesh writing system is known as:
 
-<p align="center"> ![Sample](/docs/image-1.png) </p>
+<p align="center"><img src="sources/source3.jpg"></p>
+
+> Sourced from the Wookieepedia article forementioned.
+
+My approach on this was to render S. Crane's definitions verbatim as SVG's and port them into the font. Thus creating yet another version of the Aurebesh font, built with [BirdFont](https://birdfont.org/) and released under the [SIL Open Font License (OFL-1.1)](LICENSE.md).
+
+<p align="center"><img src="docs/image-1.png"></p>
 
 Get the font file from [dist/Aurebesh.ttf](https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/Aurebesh.ttf)
 
@@ -42,7 +46,7 @@ See it in action with the test website, located at [vinorodrigues.github.io/font
 ## Features:
 * Correct canon uppercase characters.  Uppercase characters are however 10% larger - just subtle enough to be visible as a capital.
 * Numerals are represented as western numerals-like characters.
-* Ligatures sporting extended legends for "ch", "ae", "eo", "kh", "ng", "oo", "sh" and "th".
+* Ligatures sporting extended legends for "ch", "ae", "eo", "kh", "ng", "oo", "sh" and "th". *(...and "Ch", "Ae", "Eo", "Kh", "Ng", "Oo", "Sh" and "Th", but not "CH" etc. as it's assumed double uppercase represents a initialism.)*
 
 
 ## I need help
