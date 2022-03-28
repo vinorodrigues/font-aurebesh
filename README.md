@@ -6,7 +6,7 @@ A Star Wars fan font.
 
 I had just bought a Aurebesh keycap set for a keyboard of mine, and wanted to install a font ... alas ... not as simple as I thought.
 
-![KBDFans KBD67 Lite](docs/image-2.png)
+<p align="center"> ![KBDFans KBD67 Lite](docs/image-2.png) </p>
 
 Finding the right usable font turned out to be troublesome.
 
@@ -24,6 +24,7 @@ Finding the right usable font turned out to be troublesome.
         - Support for Ligatures
     - But I wanted a font that was closer to some of the characters on my keyboard.
 
+<p align="center"> ![](sources/source3.jpg) </p>
 
 ## This work
 
@@ -31,7 +32,7 @@ So I set out to create my own.
 
 This work is yet another version of the Aurebesh font, built with [BirdFont](https://birdfont.org/) and released under the [SIL Open Font License (OFL-1.1)](LICENSE.md).
 
-![Sample](/docs/image-1.png)
+<p align="center"> ![Sample](/docs/image-1.png) </p>
 
 Get the font file from [dist/Aurebesh.ttf](https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/Aurebesh.ttf)
 
