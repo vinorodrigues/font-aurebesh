@@ -46,7 +46,7 @@ See it in action with the test website, located at [vinorodrigues.github.io/font
 ## Features:
 * Correct canon uppercase characters.  Uppercase characters are however 10% larger - just subtle enough to be visible as a capital.
 * Numerals are represented as western numerals-like characters.
-* Ligatures sporting extended legends for "ch", "ae", "eo", "kh", "ng", "oo", "sh" and "th". *(...and "Ch", "Ae", "Eo", "Kh", "Ng", "Oo", "Sh" and "Th", but not "CH" etc. as it's assumed double uppercase represents a initialism.)*
+* Ligatures sporting extended legends for "ch", "ae", "eo", "kh", "ng", "oo", "sh" and "th". *(...and "Ch", "Ae", "Eo", "Kh", "Ng", "Oo", "Sh" and "Th", but not "CH" etc. as it's assumed double uppercase represents an initialism.)*
 
 
 ## I need help
