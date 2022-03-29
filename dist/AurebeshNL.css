@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Aurebesh";
+  src: url('AurebeshNL.eot');
+  src: url('AurebeshNL.eot') format('embedded-opentype'),
+    url('AurebeshNL.svg#Aurebesh-Regular') format('svg'),
+    url('AurebeshNL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: 100%;
+  text-rendering: optimizeSpeed;
+}

@@ -9,9 +9,10 @@
 
     <link rel="canonical" href="https://vinorodrigues.github.io/font-aurebesh/">
 
-    <!-- Bootstrap & FontAwesome CSS -->
+    <!-- Bootstrap, FontAwesome and Aurebesh CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-dark.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="dist/Aurebesh.css" rel="stylesheet" id="FontCSS"><!-- id used for Ligature toggle -->
 
     <!-- Stuff -->
     <meta name="color-scheme" content="light dark">
@@ -23,26 +24,6 @@
 
     <!-- Aurebesh Font -->
     <style type="text/css">
-      body {
-        text-rendering: optimizeLegibility;
-        /* font-feature-settings: "liga" 0; */
-      }
-  
-      @font-face {
-        font-family: "AurebeshSVG";
-        src: url("dist/Aurebesh.svg#Aurebesh") format('svg');
-      }
-  
-      @font-face {
-        font-family: "AurebeshTTF";
-        src: url("dist/Aurebesh.ttf") format('truetype');
-      }
-  
-      @font-face {
-        font-family: "AurebeshEOT" 
-         src: url("dist/Aurebesh.eot");
-      }
-
       .b {
         font-weight: bold;
       }
@@ -53,7 +34,7 @@
   
       body.page .translate,
       .aurebesh {
-        font-family: "AurebeshEOT", "AurebeshTTF", "AurebeshSVG", var(--bs-body-font-family);
+        font-family: Aurebesh, var(--bs-body-font-family);
       }
 
       body.page.aurebesh .translate,
@@ -66,24 +47,43 @@
       }
 
       body.aurebesh .phold::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        font-family: "AurebeshEOT", "AurebeshTTF", "AurebeshSVG", var(--bs-body-font-family);
+        font-family: Aurebesh, var(--bs-body-font-family);
       }
       body.aurebesh .phold::-moz-placeholder { /* Firefox 19+ */
-        font-family: "AurebeshEOT", "AurebeshTTF", "AurebeshSVG", var(--bs-body-font-family);
+        font-family: Aurebesh, var(--bs-body-font-family);
       }
       body.aurebesh .phold:-ms-input-placeholder { /* IE 10+ */
-        font-family: "AurebeshEOT", "AurebeshTTF", "AurebeshSVG", var(--bs-body-font-family);
+        font-family: Aurebesh, var(--bs-body-font-family);
       }
       body.aurebesh .phold:-moz-placeholder { /* Firefox 18- */
-        font-family: "AurebeshEOT", "AurebeshTTF", "AurebeshSVG", var(--bs-body-font-family);
+        font-family: Aurebesh, var(--bs-body-font-family);
       }
 
       #theIcon {
         fill: rgb(var(--bs-primary-rgb)) !important;
       }
+
+      body .liga-sep {
+        display: none;
+      }
+
+      body .liga-on,
+      body.liga .liga-off {
+        display: inline;
+      }
+
+      body.liga .liga-on,
+      body .liga-off {
+        display: none;
+      }
+
+      body.safari .no-safari {
+        display: none !important;
+      }
+
     </style>
   </head>
-  <body class="page aurebesh">
+  <body class="page aurebesh liga">
     
 <div class="col-lg-8 mx-auto p-3 py-md-5">
   <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
@@ -101,6 +101,7 @@
 
     <div class="mb-5">
       <a href="https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/Aurebesh.ttf" class="btn btn-primary btn-lg px-4"><i class="fa fa-download"></i> Download font</a>
+      <a href="https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/AurebeshNL.ttf" class="btn btn-warning btn-lg px-4"><i class="fa fa-download"></i> Download font (no ligatures)</a>
     </div>
 
     <h2>Test it</span></h2>
@@ -137,7 +138,8 @@
   <footer class="pt-5 my-5 text-muted border-top">
     <small class="i">This project would not have been possible without the influence of <a href="https://www.instagram.com/Andylah42542/" target="_blank">Andy Price</a> of the <a href="https://www.501scg.org/" rel="noopener" target="_blank">Southern Cross Garrison / 501<sup>st</sup> Legion</a>.</small><br>
     Created with <span class="reset">&#9825;</span> by Vino Rodrigues &middot; &copy; 2022
-    &middot; <a class="translate" onclick="DoTranslate()" href="#">Translate</a>    
+    <span class="no-safari">&middot; <a onclick="TogglelLigatures()" href="javascript:void(0);">Ligatures <span class="liga-on">On</span><span class="liga-sep">/</span><span class="liga-off">Off</span></a></span><!-- swapping CSS does not work of Safari -->
+    &middot; <a class="translate" onclick="DoTranslate()" href="javascript:void(0);">Translate</a>
   </footer>
 </div>
 
@@ -148,6 +150,22 @@
       for (let i = 0; i < tx.length; i++) {
         tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
         tx[i].addEventListener("input", OnInput, false);
+      }
+
+      function isSafair() {
+        var ua = navigator.userAgent.toLowerCase(); 
+        if (ua.indexOf('safari') != -1) { 
+          if ((ua.indexOf('chrome') > -1) | (ua.indexOf('android') > -1)) {
+            return false;
+          } else {
+            return true;
+          }
+        }        
+        return false;
+      }
+
+      window.onload = function () {
+        if (isSafair()) document.body.classList.add('safari');
       }
 
       function OnInput() {
@@ -165,6 +183,17 @@
 
       function DoTranslate() {
         document.body.classList.toggle("aurebesh");
+      }
+
+      function TogglelLigatures() {
+        const liga = document.body.classList.contains('liga');
+        if (liga) {
+          document.body.classList.remove('liga');
+          document.getElementById("FontCSS").href = 'dist/AurebeshNL.css';
+        } else {
+          document.body.classList.add('liga');
+          document.getElementById("FontCSS").href = 'dist/Aurebesh.css';
+        }
       }
     </script>
       

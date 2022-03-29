@@ -38,7 +38,10 @@ My approach on this was to render S. Crane's definitions verbatim as SVG's and p
 
 <p align="center"><img src="docs/image-1.png"></p>
 
-Get the font file from [dist/Aurebesh.ttf](https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/Aurebesh.ttf)
+Get the font file from [dist/Aurebesh.ttf](https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/Aurebesh.ttf),<br>
+or the "No Ligatures" variant from [dist/AurebeshNL.ttf](https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/AurebeshNL.ttf)
+
+> **NB:** The Ligatures and "No Ligatures" variants cannot be installed at the same time on your device.
 
 See it in action with the test website, located at [vinorodrigues.github.io/font-aurebesh](https://vinorodrigues.github.io/font-aurebesh/)
 
