@@ -81,6 +81,10 @@
         display: none !important;
       }
 
+      .btn-2x {
+        min-height: 4em;
+      }
+
     </style>
   </head>
   <body class="page aurebesh liga">
@@ -100,8 +104,8 @@
     </div>
 
     <div class="mb-3">
-      <a href="https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/Aurebesh.ttf" class="btn btn-primary btn-lg px-4 mb-2"><i class="fa fa-download"></i> Download font</a>
-      <a href="https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/AurebeshNL.ttf" class="btn btn-warning btn px-4 mb-2"><i class="fa fa-download"></i> Download font <i>(no ligatures)</i></a>
+      <a href="https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/Aurebesh.ttf" class="btn btn-success px-4 mb-2 btn-2x"><span><i class="fa fa-download"></i> Download font<br><small>(<u>with</u> ligatures)</small></span></a>
+      <a href="https://github.com/vinorodrigues/font-aurebesh/raw/main/dist/AurebeshNL.ttf" class="btn btn-warning px-4 mb-2 btn-2x"><span><i class="fa fa-download"></i> Download font<br><small>(no ligatures)</small></span></a>
     </div>
 
     <h2>Test it</span></h2>
@@ -138,7 +142,7 @@
   <footer class="pt-5 my-5 text-muted border-top">
     <small class="i">This project would not have been possible without the influence of <a href="https://www.instagram.com/Andylah42542/" target="_blank">Andy Price</a> of the <a href="https://www.501scg.org/" rel="noopener" target="_blank">Southern Cross Garrison / 501<sup>st</sup> Legion</a>.</small><br>
     Created with <span class="reset">&#9825;</span> by Vino Rodrigues &middot; &copy; 2022
-    <span class="no-safari">&middot; <a onclick="TogglelLigatures()" href="javascript:void(0);">Ligatures <span class="liga-on">On</span><span class="liga-sep">/</span><span class="liga-off">Off</span></a></span><!-- swapping CSS does not work of Safari -->
+    <span class="no-safari">&middot; <a onclick="TogglelLigatures()" href="javascript:void(0);">Switch Ligatures <span class="liga-on">On</span><span class="liga-sep">/</span><span class="liga-off">Off</span></a></span><!-- swapping CSS does not work of Safari -->
     &middot; <a class="translate" onclick="DoTranslate()" href="javascript:void(0);">Translate</a>
   </footer>
 </div>
